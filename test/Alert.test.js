@@ -32,3 +32,14 @@ describe('Alert styles', function() {
 	})
 
 })
+describe('Should call onDismiss callback on dismiss click',function(){
+	it('Alert close button', function() {
+		let clickFlag = false;
+		let alertClick = function (){
+			clickFlag = true;
+		};
+		let alert = mount(<Alert onDismiss={ alertClick } />);
+		alert.find('.close').simulate('click');
+		expect(clickFlag).to.equal(true);
+	})
+ })

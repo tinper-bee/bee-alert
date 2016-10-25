@@ -6,7 +6,7 @@ node_js:
   - "6"
 
 service_name: travis-pro
-repo_token: ZgLZHoWQC7C9tX29TxMYTbEaUm5v4WmK3
+repo_token: YJBuG6WNFZ7kSD4mFFMonG8ymjn8o8W2X
 
 env:
   global:
