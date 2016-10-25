@@ -55,6 +55,8 @@ class Alert extends React.Component {
 	    };
 	    if(colors) {
 	    	clsObj[`${clsPrefix}-${colors}`] = true;
+	    }else{
+	    	clsObj[`${clsPrefix}-warning`] = true;
 	    }
 	    return (
 	      <div
