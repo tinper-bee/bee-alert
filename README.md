@@ -1,6 +1,6 @@
 # bee-alert
 [![npm version](https://img.shields.io/npm/v/bee-alert.svg)](https://www.npmjs.com/package/bee-alert)
-[![Build Status](https://img.shields.io/travis/tinper-bee/generator-tinper-bee/master.svg)](https://travis-ci.org/tinper-bee/bee-alert)
+[![Build Status](https://img.shields.io/travis/tinper-bee/bee-alert/master.svg)](https://travis-ci.org/tinper-bee/bee-alert)
 [![Coverage Status](https://coveralls.io/repos/github/tinper-bee/bee-alert/badge.svg?branch=master)](https://coveralls.io/github/tinper-bee/bee-alert?branch=master)
 [![devDependency Status](https://img.shields.io/david/dev/tinper-bee/bee-alert.svg)](https://david-dm.org/tinper-bee/bee-alert#info=devDependencies)
 
