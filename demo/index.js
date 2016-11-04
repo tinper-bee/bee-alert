@@ -82,7 +82,6 @@ class Demo3 extends Component {
 			return (
 				<Button onClick={this.handerAlertShow.bind(this)}> Show alert</Button>
 			)
-			
 		}
 
 	}
