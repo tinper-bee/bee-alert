@@ -2,7 +2,7 @@
 [![npm version](https://img.shields.io/npm/v/bee-alert.svg)](https://www.npmjs.com/package/bee-alert)
 [![Build Status](https://img.shields.io/travis/tinper-bee/bee-alert/master.svg)](https://travis-ci.org/tinper-bee/bee-alert)
 [![Coverage Status](https://coveralls.io/repos/github/tinper-bee/bee-alert/badge.svg?branch=master)](https://coveralls.io/github/tinper-bee/bee-alert?branch=master)
-[![devDependency Status](https://img.shields.io/david/dev/tinper-bee/bee-alert.svg)](https://david-dm.org/tinper-bee/bee-alert#info=devDependencies)
+
 
 
 为用户操作定向的做提示。根据信息类型不同提供相应的以背景颜色区分的alert。若需背景颜色加深需加`dark`类。
