@@ -22,6 +22,21 @@ function demo1() {
 				<Alert colors="info">
 				    <strong>Holy guacamole!</strong> Best check yo self, you're not looking too good.
 				</Alert>
+				<Alert colors="news" className ="dark">
+				    <strong>Holy guacamole!</strong> Best check yo self, you're not looking too good.
+				</Alert>
+				<Alert colors="success" className ="dark">
+				    <strong>Holy guacamole!</strong> Best check yo self, you're not looking too good.
+				</Alert>
+				<Alert colors="warning" className ="dark">
+				    <strong>Holy guacamole!</strong> Best check yo self, you're not looking too good.
+				</Alert>
+				<Alert colors="danger" className ="dark">
+				    <strong>Holy guacamole!</strong> Best check yo self, you're not looking too good.
+				</Alert>
+				<Alert colors="info" className ="dark">
+				    <strong>Holy guacamole!</strong> Best check yo self, you're not looking too good.
+				</Alert>
 			</div>
     );
 }

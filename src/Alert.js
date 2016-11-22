@@ -1,14 +1,16 @@
 import classNames from 'classnames';
-import React from 'react';
+import React, { PropTypes } from 'react';
 import Button from 'bee-button';
 
 
 const propTypes = {
-  onDismiss: React.PropTypes.func,
-  closeLabel: React.PropTypes.string,
+  onDismiss: PropTypes.func,
+  closeLabel: PropTypes.string
 };
 
-const clsPrefix = "u-alert";
+const defaultProps = {
+	clsPrefix : "u-alert"
+};
 
 class Alert extends React.Component {
 	constructor(props) {
@@ -47,12 +49,13 @@ class Alert extends React.Component {
     }
 
     render() {
-	    const { onDismiss, closeLabel, colors , className, children, ...others } =
+	    const { onDismiss, closeLabel, colors , className, children, clsPrefix,...others } =
 	      this.props;
 
-	    const clsObj = {
-	    	"u-alert" : true
-	    };
+	    const clsObj = {};
+
+	    clsObj[`${clsPrefix}`] = true;
+
 	    if(colors) {
 	    	clsObj[`${clsPrefix}-${colors}`] = true;
 	    }else{
@@ -74,5 +77,5 @@ class Alert extends React.Component {
 }
 
 Alert.propTypes = propTypes;
-
+Alert.defaultProps = defaultProps;
 export default  Alert

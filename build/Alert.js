@@ -31,11 +31,13 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : _defaults(subClass, superClass); }
 
 var propTypes = {
-	onDismiss: _react2["default"].PropTypes.func,
-	closeLabel: _react2["default"].PropTypes.string
+	onDismiss: _react.PropTypes.func,
+	closeLabel: _react.PropTypes.string
 };
 
-var clsPrefix = "u-alert";
+var defaultProps = {
+	clsPrefix: "u-alert"
+};
 
 var Alert = function (_React$Component) {
 	_inherits(Alert, _React$Component);
@@ -94,12 +96,14 @@ var Alert = function (_React$Component) {
 		var colors = _props.colors;
 		var className = _props.className;
 		var children = _props.children;
+		var clsPrefix = _props.clsPrefix;
 
-		var others = _objectWithoutProperties(_props, ['onDismiss', 'closeLabel', 'colors', 'className', 'children']);
+		var others = _objectWithoutProperties(_props, ['onDismiss', 'closeLabel', 'colors', 'className', 'children', 'clsPrefix']);
 
-		var clsObj = {
-			"u-alert": true
-		};
+		var clsObj = {};
+
+		clsObj['' + clsPrefix] = true;
+
 		if (colors) {
 			clsObj[clsPrefix + '-' + colors] = true;
 		} else {
@@ -121,6 +125,6 @@ var Alert = function (_React$Component) {
 }(_react2["default"].Component);
 
 Alert.propTypes = propTypes;
-
+Alert.defaultProps = defaultProps;
 exports["default"] = Alert;
 module.exports = exports['default'];
