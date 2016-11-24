@@ -52,7 +52,7 @@ class Alert extends React.Component {
 	    const { onDismiss, closeLabel, colors , className, children, clsPrefix,...others } =
 	      this.props;
 
-	    const clsObj = {};
+	    let clsObj = {};
 
 	    clsObj[`${clsPrefix}`] = true;
 
