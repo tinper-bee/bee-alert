@@ -10,8 +10,8 @@
 |:--|:---:|:--:|---:|
 |className|类名|string|-|
 |colors|oneOf:`info` `news` `success` `danger` `warning`|string|`warning`|
-|controlLabel|关闭按钮文字|string||
-|onDismiss|关闭alert触发的方法|func||
+|controlLabel|关闭按钮文字|string|-|
+|onDismiss|关闭alert触发的方法|func|-|
 
 
 
