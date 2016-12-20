@@ -90,15 +90,14 @@ var Alert = function (_React$Component) {
 	};
 
 	Alert.prototype.render = function render() {
-		var _props = this.props;
-		var onDismiss = _props.onDismiss;
-		var closeLabel = _props.closeLabel;
-		var colors = _props.colors;
-		var className = _props.className;
-		var children = _props.children;
-		var clsPrefix = _props.clsPrefix;
-
-		var others = _objectWithoutProperties(_props, ['onDismiss', 'closeLabel', 'colors', 'className', 'children', 'clsPrefix']);
+		var _props = this.props,
+		    onDismiss = _props.onDismiss,
+		    closeLabel = _props.closeLabel,
+		    colors = _props.colors,
+		    className = _props.className,
+		    children = _props.children,
+		    clsPrefix = _props.clsPrefix,
+		    others = _objectWithoutProperties(_props, ['onDismiss', 'closeLabel', 'colors', 'className', 'children', 'clsPrefix']);
 
 		var clsObj = {};
 
