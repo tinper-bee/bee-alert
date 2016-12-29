@@ -1,14 +1,19 @@
 @import "../node_modules/tinper-bee-core/scss/minxin-variables";
 @import "../node_modules/tinper-bee-core/scss/minxin-mixins";
 
+
 .u-alert-dismissable, .alert-dismissible {
     padding-right: 35px;
 }
 .u-alert {
-    padding: 15px;
-    margin-bottom: 20px;
+    padding: $alert-padding;
     border: 1px solid transparent;
-    border-radius: 4px;
+    border-radius: $alert-border-radius;
+    font-size: $alert-font-size;
+    .alert-text{
+    	padding-left: $alert-text-padding-left;
+    	padding-right: $alert-text-padding-right;
+    }
 	button.close {
 	    padding: 0;
 	    cursor: pointer;
@@ -18,12 +23,12 @@
 	}
 	.close {
 	    float: right;
-	    font-size: 21px;
-	    font-weight: 700;
+	    font-size: $alert-close-font-size;
+	    font-weight: $alert-close-font-weight;
 	    line-height: 1;
 	    color: #000;
 	    text-shadow: 0 1px 0 #fff;
-	    opacity: .2;
+	    opacity: $alert-close-opacity;
 	    filter: alpha(opacity=20);
 	}
 }

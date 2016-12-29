@@ -7,10 +7,12 @@ class Demo1 extends Component {
 		return (
 			<div>
 				<Alert colors="news">
-				    <strong>Holy guacamole!</strong> Best check yo self, you're not looking too good.
+				    <Icon type="uf uf-notification"></Icon>
+				    <span className="alert-text"><strong>Holy guacamole!</strong> Best check yo self, you're not looking too good.</span>
 				</Alert>
 				<Alert colors="news" className ="dark">
-				    <strong>Holy guacamole!</strong> Best check yo self, you're not looking too good.
+				    <Icon className="uf uf-notification"></Icon>
+				    <span className="alert-text"><strong>Holy guacamole!</strong> Best check yo self, you're not looking too good.</span>
 				</Alert>
 			</div>
 		)

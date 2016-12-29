@@ -5,6 +5,7 @@ import Button from 'bee-button';
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import Alert from '../src';
+import Icon from 'bee-icon';
 
 
 const CARET = <i className="uf uf-arrow-down"></i>;

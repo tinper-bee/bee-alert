@@ -4,8 +4,7 @@
 [![Coverage Status](https://coveralls.io/repos/github/tinper-bee/bee-alert/badge.svg?branch=master)](https://coveralls.io/github/tinper-bee/bee-alert?branch=master)
 
 
-
-为用户操作定向的做提示。根据信息类型不同提供相应的以背景颜色区分的alert。若需背景颜色加深需加`dark`类。
+页面内部针对用户行为操作的区域性提醒。根据信息类型不同提供相应的以背景颜色区分的alert。若需背景颜色加深需加`dark`类。
 
 ## 使用
 
