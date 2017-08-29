@@ -2,7 +2,12 @@
  * @title 按钮触发`Alert`
  * @description 业务场景，通过点击触发按钮动作。控制`Alert`显示与否
  */
-class Demo2 extends Component {
+
+import React, { Component } from 'react';
+import Button from 'bee-button';
+import Alert from '../../src';
+
+export default class Demo2 extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
