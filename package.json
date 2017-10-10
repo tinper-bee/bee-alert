@@ -34,19 +34,22 @@
   },
   "dependencies": {
     "babel-runtime": "^6.25.0",
-    "bee-button": "^0.2.2",
-    "bee-icon": "0.0.5",
-    "bee-layout": "^0.2.2",
+    "bee-button": "latest",
+    "bee-icon": "latest",
+    "bee-layout": "latest",
     "classnames": "^2.2.5",
     "tinper-bee-core": "latest"
+  },
+   "peerDependencies": {
+	"react": "^15.3.0 || ^16.0",
+	"react-dom": "^15.3.0 || ^16.0",
+	"prop-types": "15.6.0"
   },
   "devDependencies": {
     "chai": "^3.5.0",
     "enzyme": "^2.4.1",
-    "react": "15.3.2",
     "prop-types": "^15.5.10",
     "react-addons-test-utils": "15.3.2",
-    "react-dom": "15.3.2",
     "console-polyfill": "~0.2.1",
     "es5-shim": "~4.1.10",
     "bee-panel": "latest",
