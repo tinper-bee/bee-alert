@@ -24,7 +24,7 @@ export default class Demo2 extends Component {
 		if(this.state.showAlert){
 			return ( 
 				<div>
-					<Button type="warning" onClick={this.handleAlertDismiss.bind(this)}> hide alert</Button>
+					<Button type="warning" onClick={this.handleAlertDismiss.bind(this)}>点击显示</Button>
 					<Alert colors="news" className="dark" onDismiss={this.handleAlertDismiss.bind(this)} closeLabel="关闭">
 					    <strong>Holy guacamole!</strong> Best check yo self, you're not looking too good.
 					</Alert>
