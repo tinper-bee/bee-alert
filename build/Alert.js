@@ -78,9 +78,10 @@ var Alert = function (_React$Component) {
             onDismiss = _props.onDismiss,
             colors = _props.colors,
             className = _props.className,
+            closeLabel = _props.closeLabel,
             children = _props.children,
             clsPrefix = _props.clsPrefix,
-            others = _objectWithoutProperties(_props, ['onDismiss', 'colors', 'className', 'children', 'clsPrefix']);
+            others = _objectWithoutProperties(_props, ['onDismiss', 'colors', 'className', 'closeLabel', 'children', 'clsPrefix']);
 
         var clsObj = {};
 
