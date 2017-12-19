@@ -7,7 +7,7 @@ import React, { Component } from 'react';
 import Icon from 'bee-icon';
 import Alert from '../../src';
 
-export default class Demo1 extends Component {
+ class Demo1 extends Component {
 	render () {
 		return (
 			<div>
@@ -23,3 +23,5 @@ export default class Demo1 extends Component {
 		)
 	}
 }
+
+export default Demo1;

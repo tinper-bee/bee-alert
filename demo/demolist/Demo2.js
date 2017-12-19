@@ -7,7 +7,7 @@ import React, { Component } from 'react';
 import Button from 'bee-button';
 import Alert from '../../src';
 
-export default class Demo2 extends Component {
+ class Demo2 extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
@@ -38,3 +38,5 @@ export default class Demo2 extends Component {
 
 	}
 }
+
+export default Demo2;
