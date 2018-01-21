@@ -12,6 +12,7 @@
 |colors|oneOf:`info` `news` `success` `danger` `warning`|string|`warning`|
 |controlLabel|关闭按钮文字|string|-|
 |onDismiss|关闭alert触发的方法|func|-|
+|dark|显示颜色深度|bool|false|
 
 
 

@@ -11,10 +11,10 @@
   border: 1px solid transparent;
   border-radius: $alert-border-radius;
   font-size: $alert-font-size;
-  .alert-text {
-    padding-left: $alert-text-padding-left;
-    padding-right: $alert-text-padding-right;
-  }
+  //.alert-text {
+  //  padding-left: $alert-text-padding-left;
+  //  padding-right: $alert-text-padding-right;
+  //}
   .close {
     position: absolute;
     right: 20px;

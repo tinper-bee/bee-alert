@@ -14,28 +14,35 @@ import Alert from '../../src';
 			showAlert: false
 		}
 	}
-	handleAlertDismiss () {
+	handleAlertDismiss = () => {
 		this.setState({showAlert: false});
 	}
-	handerAlertShow () {
+	handerAlertShow = () => {
 		this.setState({showAlert: true});
 	}
 	render(){
-		if(this.state.showAlert){
 			return ( 
 				<div>
-					<Button type="warning" onClick={this.handleAlertDismiss.bind(this)}>点击显示</Button>
-					<Alert colors="news" className="dark" onDismiss={this.handleAlertDismiss.bind(this)} closeLabel="关闭">
-					    <strong>Holy guacamole!</strong> Best check yo self, you're not looking too good.
-					</Alert>
+					<Button
+						colors="warning"
+						onClick={this.handerAlertShow}>
+						点击显示
+					</Button>
+					{
+						this.state.showAlert ? (
+							<Alert
+								colors="warning"
+								dark
+								onDismiss={this.handleAlertDismiss}
+								className="demo2-alert"
+								closeLabel="关闭">
+								这是一条很有深意的警示
+							</Alert>
+						) : null
+					}
+
 				</div>
 			)
-		}else {
-			return (
-				<Button onClick={this.handerAlertShow.bind(this)}> Show alert</Button>
-			)
-		}
-
 	}
 }
 

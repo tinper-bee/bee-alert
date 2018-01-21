@@ -10,12 +10,14 @@ const propTypes = {
     closeLabel: PropTypes.oneOfType([
         PropTypes.element,
         PropTypes.string
-    ])
+    ]),
+    dark: PropTypes.bool
 };
 
 const defaultProps = {
     clsPrefix: "u-alert",
-    closeLabel: defaultIcon
+    closeLabel: defaultIcon,
+    dark: false
 };
 
 class Alert extends React.Component {
@@ -45,6 +47,7 @@ class Alert extends React.Component {
             closeLabel,
             children,
             clsPrefix,
+            dark,
             ...others
         } =
             this.props;
@@ -58,6 +61,11 @@ class Alert extends React.Component {
         } else {
             clsObj[`${clsPrefix}-warning`] = true;
         }
+
+        if(dark){
+            clsObj[`dark`] = true;
+        }
+
         return (
             <div
                 {...others}
@@ -69,7 +77,6 @@ class Alert extends React.Component {
                 {
                     this.renderDismissButton(onDismiss)
                 }
-
             </div>
         );
     }
