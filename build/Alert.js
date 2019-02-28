@@ -38,12 +38,14 @@ var defaultIcon = _react2["default"].createElement(_beeIcon2["default"], { type:
 
 var propTypes = {
     onDismiss: _propTypes2["default"].func,
-    closeLabel: _propTypes2["default"].oneOfType([_propTypes2["default"].element, _propTypes2["default"].string])
+    closeLabel: _propTypes2["default"].oneOfType([_propTypes2["default"].element, _propTypes2["default"].string]),
+    dark: _propTypes2["default"].bool
 };
 
 var defaultProps = {
     clsPrefix: "u-alert",
-    closeLabel: defaultIcon
+    closeLabel: defaultIcon,
+    dark: false
 };
 
 var Alert = function (_React$Component) {
@@ -81,7 +83,8 @@ var Alert = function (_React$Component) {
             closeLabel = _props.closeLabel,
             children = _props.children,
             clsPrefix = _props.clsPrefix,
-            others = _objectWithoutProperties(_props, ['onDismiss', 'colors', 'className', 'closeLabel', 'children', 'clsPrefix']);
+            dark = _props.dark,
+            others = _objectWithoutProperties(_props, ['onDismiss', 'colors', 'className', 'closeLabel', 'children', 'clsPrefix', 'dark']);
 
         var clsObj = {};
 
@@ -92,6 +95,11 @@ var Alert = function (_React$Component) {
         } else {
             clsObj[clsPrefix + '-warning'] = true;
         }
+
+        if (dark) {
+            clsObj['dark'] = true;
+        }
+
         return _react2["default"].createElement(
             'div',
             _extends({}, others, {
